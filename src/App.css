@@ -37,13 +37,6 @@ code {
     width: 19rem;
 }
 
-.progress {
-    background-color: lightblue;
-    height: 0.4rem;
-    grid-column-start: 1;
-    grid-column-end: span 2;
-}
-
 .slide-in-top {
     -webkit-animation: slide-in-top 2s cubic-bezier(0.6, 0.04, 0.98, 0.335) both;
     animation: slide-in-top 2s cubic-bezier(0.6, 0.04, 0.98, 0.335) both;
@@ -81,10 +74,6 @@ code {
     grid-column-start: 2;
 }
 
-.moleculeProgress {
-    width: 19rem;
-}
-
 .text-left {
     text-align: left !important;
 }
@@ -99,4 +88,7 @@ code {
 
 .smallest-text {
     font-size: 0.9rem;
+}
+.btn:hover {
+    animation: color-me-in 5s; /* other keywords like "infinite alternate" can be useful here */
 }

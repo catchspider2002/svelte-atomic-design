@@ -1,4 +1,4 @@
-$theme-color-custom: #e15915;
+$primary:        #e15915;
 $text-color-custom: white;
 $inverted-color-custom: white;
 $theme-custom: "light";
@@ -14,30 +14,40 @@ $background-color: white;
     $inverted-color-custom: black;
 }
 
+// Progress
+$progress-height: 0.4rem;
+
+.progress {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    background-color: lighten($color: $primary, $amount: 45);
+}
+
+.moleculeProgress {
+    width: 19rem;
+}
+
+.progress-bar {
+    background-color: $primary;
+}
+
 // Required
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
 // Optional
-@import "../node_modules/bootstrap/scss/reboot";
+// @import "../node_modules/bootstrap/scss/reboot";
 @import "../node_modules/bootstrap/scss/type";
 @import "../node_modules/bootstrap/scss/images";
-@import "../node_modules/bootstrap/scss/code";
+// @import "../node_modules/bootstrap/scss/code";
 @import "../node_modules/bootstrap/scss/grid";
 @import "../node_modules/bootstrap/scss/card";
 @import "../node_modules/bootstrap/scss/progress";
+@import "../node_modules/bootstrap/scss/buttons";
 
 @import "./Molecules/MoleculePricing";
 
 body {
     background-color: $background-color;
-}
-
-.progress {
-    background-color: lighten($color: $theme-color-custom, $amount: 45);
-}
-
-.progress-bar {
-    background-color: $theme-color-custom;
 }
