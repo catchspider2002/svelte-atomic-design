@@ -1,4 +1,4 @@
-$primary:        #e15915;
+$primary: #e15915;
 $text-color-custom: white;
 $inverted-color-custom: white;
 $theme-custom: "light";
@@ -47,7 +47,129 @@ $progress-height: 0.4rem;
 @import "../node_modules/bootstrap/scss/buttons";
 
 @import "./Molecules/MoleculePricing";
+@import "./bootstrap-button-hover-classes.scss";
+
+// BUttons
+
+.btn-flat {
+    color: #e15915;
+    // border-color: #e15915;
+    &:hover {
+        color: #fff;
+        background-color: #e15915;
+        // border-color: #e15915;
+    }
+    &:focus {
+        box-shadow: 0 0 0 0.2rem rgba(225, 89, 21, 0.5);
+    }
+    &:disabled {
+        color: #e15915;
+        background-color: transparent;
+    }
+}
+
+.btn-flat:not(:disabled):not(.disabled):active,
+.btn-flat:not(:disabled):not(.disabled).active,
+.show > .btn-flat.dropdown-toggle {
+    color: #fff;
+    background-color: #e15915;
+    // border-color: #e15915;
+}
+
+.btn-flat:not(:disabled):not(.disabled):active:focus,
+.btn-flat:not(:disabled):not(.disabled).active:focus,
+.show > .btn-flat.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(225, 89, 21, 0.5);
+}
 
 body {
     background-color: $background-color;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+// Bootstrap specific css
+.card {
+    width: 19rem;
+}
+
+.slide-in-top {
+    -webkit-animation: slide-in-top 2s cubic-bezier(0.6, 0.04, 0.98, 0.335) both;
+    animation: slide-in-top 2s cubic-bezier(0.6, 0.04, 0.98, 0.335) both;
+}
+.App-header {
+    background: black;
+    animation: color-me-in 5s;
+}
+
+@keyframes color-me-in {
+    0% {
+        background: orange;
+    }
+    50% {
+        background: green;
+    }
+    100% {
+        background: black;
+    }
+}
+
+@keyframes wiggle {
+    20% {
+        transform: translateX(4px);
+    }
+    40% {
+        transform: translateX(-4px);
+    }
+    60% {
+        transform: translateX(2px);
+    }
+    80% {
+        transform: translateX(-1px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.grid-item-1 {
+    grid-column-start: 1;
+}
+
+.grid-item-2 {
+    grid-column-start: 2;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.smallest-text {
+    font-size: 0.9rem;
+}
+// .btn:hover {
+//     animation: wiggle 1s;
+// }

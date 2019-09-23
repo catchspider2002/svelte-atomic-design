@@ -26,7 +26,7 @@
   "scripts": {
     "build": "rollup -c",
     "autobuild": "rollup -c -w",
-    "dev": "run-p start:dev autobuild",
+    "dev": "run-p start:dev autobuild compile-sass",
     "start": "sirv public --single",
     "start:dev": "sirv public --single --dev",
     "compile-sass": "node-sass src/bootstrap-custom.scss src/bootstrap-custom.css --watch"

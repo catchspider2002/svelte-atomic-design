@@ -1,4 +1,3 @@
-import "./App.css";
 import "./bootstrap-custom.css";
 import App from "./App.svelte";
 

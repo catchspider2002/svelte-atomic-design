@@ -11,6 +11,12 @@
   ];
 </script>
 
+<style>
+  .pricingBody {
+    background-color: red;
+  }
+</style>
+
 <div class="pricingTable col-4">
   <div class="pricingHeader">
     <span>$50 /mo</span>
@@ -21,13 +27,9 @@
       {#each pricingData as { value, valid }, i}
         <PricingText {value} {valid} />
       {/each}
-      <!-- <PricingText value="Lorem Ipsum Service 5" valid="yes" />
-      <PricingText value="Lorem Ipsum Service 2" valid="yes" />
-      <PricingText value="Lorem Ipsum Service 3" valid="no" />
-      <PricingText value="Lorem Ipsum Service 4" valid="yes" />
-      <PricingText value="Lorem Ipsum Service 5" valid="no" />
-      <PricingText value="Lorem Ipsum Service 6" valid="no" /> -->
     </ul>
-    <Button text="BUY NOW" />
+    <Button text="SMALL" size="small" />
+    <Button text="MEDIUM" type="outline" color="primary" />
+    <Button text="LARGE" size="large" type="flat" />
   </div>
 </div>
