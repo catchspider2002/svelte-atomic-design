@@ -2,6 +2,7 @@
   import Card from "./Molecules/MoleculeCard.svelte";
   import Progress from "./Molecules/MoleculeProgress.svelte";
   import Pricing from "./Molecules/MoleculePricing.svelte";
+  import Button from "./Molecules/Atoms/AtomButton.svelte";
 </script>
 
 <div class="bg-gray-200">
@@ -81,10 +82,7 @@
   <Card title="New title" subtitle="Sub" />
   <p class="m-8" />
   <button class="hvr-sweep-to-right">Test button</button>
-  <button
-    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-    Button
-  </button>
+  <Button text="Button" className="bg-blue-500 hover:bg-blue-700 text-white" />
   <button
     class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4
     rounded-full">
@@ -96,16 +94,13 @@
     rounded">
     Button
   </button>
-  <button
-    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border
-    border-blue-700 rounded">
-    Button
-  </button>
-  <button
-    class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4
-    border-b-4 border-blue-700 hover:border-blue-500 rounded">
-    Button
-  </button>
+  <Button
+    text="BUtton"
+    className="bg-blue-500 hover:bg-blue-700 text-white border border-blue-700 " />
+  <Button
+    text="Button"
+    className="bg-blue-500 hover:bg-blue-400 text-white border-b-4 border-blue-700
+    hover:border-blue-500" />
   <div class="inline-flex">
     <button
       class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4
@@ -123,6 +118,28 @@
     rounded inline-flex items-center">
     <svg
       class="fill-current w-4 h-4 mr-2"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 20 20">
+      <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
+    </svg>
+    <span>Download</span>
+  </button>
+  <button
+    class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4
+    rounded inline-flex items-center">
+    <span>Download</span>
+    <svg
+      class="fill-current w-4 h-4 ml-2"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 20 20">
+      <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
+    </svg>
+  </button>
+  <button
+    class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4
+    rounded inline-flex items-center hvr-icon-bounce">
+    <svg
+      class="hvr-icon fill-current w-4 h-4 mr-2"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 20 20">
       <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
@@ -227,12 +244,10 @@
   <div class="md:flex md:items-center">
     <div class="md:w-1/3" />
     <div class="md:w-2/3">
-      <button
-        class="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline
-        focus:outline-none text-white font-bold py-2 px-4 rounded"
-        type="button">
-        Sign Up
-      </button>
+      <Button
+        text="Sign Up"
+        className="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline
+        focus:outline-none text-white" />
     </div>
   </div>
 </form>
