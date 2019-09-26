@@ -2,6 +2,4 @@
   export let valid, value;
 </script>
 
-<li class={valid === 'yes' ? 'enabledPricingText' : 'disabledPricingText'}>
-  {value}
-</li>
+<li class={valid === 'no' ? 'line-through' : ''}>{value}</li>

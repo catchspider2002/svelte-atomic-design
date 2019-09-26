@@ -1,4 +1,4 @@
-import "./bootstrap-custom.css";
+import "./main.css";
 import App from "./App.svelte";
 
 var app = new App({

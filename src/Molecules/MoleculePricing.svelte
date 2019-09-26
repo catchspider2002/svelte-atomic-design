@@ -11,25 +11,25 @@
   ];
 </script>
 
-<style>
-  .pricingBody {
-    background-color: red;
-  }
-</style>
-
-<div class="pricingTable col-4">
-  <div class="pricingHeader">
-    <span>$50 /mo</span>
+<div class="w-3/12 mx-auto text-center">
+  <div
+    class="pricingHeader bg-orange-400 relative flex items-center w-full p-2">
+    <span class="text-white w-full">$50 /mo</span>
   </div>
   <div class="pricingBody">
-    <h2 class="text-center">$50 /mo</h2>
-    <ul class="list-unstyled">
+    <h2 class="mt-4 font-bold text-xl mb-2">$50 /mo</h2>
+    <ul class="list-none">
       {#each pricingData as { value, valid }, i}
         <PricingText {value} {valid} />
       {/each}
     </ul>
-    <Button text="SMALL" size="small" />
-    <Button text="MEDIUM" type="outline" color="primary" />
+    <Button
+      text="SMALL"
+      className="text-white bg-orange-400 hover:bg-orange-700" />
+    <Button
+      text="MEDIUM"
+      className="border-orange-500 text-orange-500 border-2
+      hover:border-orange-300 hover:text-orange-300" />
     <Button text="LARGE" size="large" type="flat" />
   </div>
 </div>

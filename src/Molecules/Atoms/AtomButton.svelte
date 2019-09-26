@@ -1,20 +1,9 @@
 <script>
-  export let text,
-    size = "medium", // small, medium, large
-    type = "default", // default, outline, flat
-    color = "primary"; // color - primary, secondary
-
-  let colorClass = "btn-" + color;
-
-  let sizeClass =
-    size === "small" ? " btn-sm" : size === "large" ? " btn-lg" : "";
-
-  let typeClass =
-    type === "outline"
-      ? "btn-outline-" + color
-      : type === "flat"
-      ? "btn-flat"
-      : colorClass;
+  export let text, className;
 </script>
 
-<button type="button" class="btn {typeClass}{sizeClass} blue-border-hover">{text}</button>
+<button
+  type="button"
+  class="font-bold py-2 px-4 rounded {className}">
+  {text}
+</button>

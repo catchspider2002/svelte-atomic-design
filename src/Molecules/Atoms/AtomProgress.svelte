@@ -1,11 +1,10 @@
 <script>
-  export let value;
+  export let value, className;
 </script>
-
-<div class="progress">
+<div class="bg-red-200 rounded flex h-2 overflow-hidden text-xs mx-auto {className}">
   <div
     style="width:{value}%"
-    class="progress-bar"
+    class="bg-red-500"
     role="progressbar"
     aria-valuenow={value}
     aria-valuemin="0"
