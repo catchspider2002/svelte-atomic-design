@@ -21,7 +21,12 @@
         alt=""
         src="https://rscard.px-lab.com/startuper/wp-content/uploads/sites/2/2015/11/startuper-1-299x347.jpg"
         class="lg:w-1/3 sm:w-full" />
-        <div class="speech-bubble">HELLO</div>
+      <div>
+        <div
+          class="bg-orange-600 w-full lg:w-1/2 mx-auto flex flex-row
+          justify-center" />
+      </div>
+      <div class="speech-bubble">HELLO</div>
     </div>
     <div
       class="bg-orange-600 w-full lg:w-1/2 mx-auto flex flex-row justify-center">
