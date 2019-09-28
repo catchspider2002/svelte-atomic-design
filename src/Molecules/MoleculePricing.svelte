@@ -1,6 +1,6 @@
 <script>
   import PricingText from "./Atoms/AtomPricingText.svelte";
-  import Button from "./Atoms/AtomButton.svelte";
+  import RoundedButton from "./Atoms/Buttons/RoundedButton.svelte";
   let pricingData = [
     { value: "Lorem Ipsum Service 1", valid: "yes" },
     { value: "Lorem Ipsum Service 2", valid: "yes" },
@@ -23,13 +23,13 @@
         <PricingText {value} {valid} />
       {/each}
     </ul>
-    <Button
+    <RoundedButton
       text="SMALL"
       className="text-white bg-orange-400 hover:bg-orange-700" />
-    <Button
+    <RoundedButton
       text="MEDIUM"
       className="border-orange-500 text-orange-500 border-2
       hover:border-orange-300 hover:text-orange-300" />
-    <Button text="LARGE" size="large" type="flat" />
+    <RoundedButton text="LARGE" size="large" type="flat" />
   </div>
 </div>
