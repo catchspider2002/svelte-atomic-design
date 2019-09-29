@@ -1,6 +1,6 @@
 <script>
   export let text, className;
-  // import msg from "../../../../tailwind.config.js";
+  import msg from "../../../../tailwind.config.js";
 
   // console.log(msg.theme.colors.gray);
 </script>
